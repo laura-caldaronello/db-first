@@ -1,0 +1,30 @@
+"Auto usate messe in vendita da tal concessionario"
+
+id interno alla concessionaria      numero          auto_inc            not null            primary key (unique)
+targa                               stringa         varchar(7)          not null            unique
+marca                               stringa         varchar(20)         not null
+modello                             stringa         varchar(20)         not null
+colore                              stringa         varchar(20)         null
+anno                                data            date                not null
+n. proprietari precedenti           numero          tinyint             null
+km fatti (km)                       numero          mediumint           null
+prezzo (€)                          numero          float(10,2)         null
+posti                               numero          tinyint             null
+porte                               numero          tinyint             null
+alimentazione                       stringa         varchar(20)         not null
+cilindrata (cc)                     numero          smallint            not null
+potenza (cv)                        numero          smallint            null
+cambio manuale                      numero          tinyint (bool)      null                default: 1
+emissioni co2 (g/km)                numero          smallint            null
+classe ambientale                   stringa         varchar(3)          not null
+consumi (l/100km)                   numero          tinyint             null
+aria condizionata                   numero          tinyint (bool)      null
+dimensione bagagliaio (l)           numero          smallint            null
+lunghezza (cm)                      numero          smallint            null
+larghezza (cm)                      numero          smallint            null
+altezza (cm)                        numero          smallint            null
+peso (kg)                           numero          smallint            null
+navigatore integrato                numero          tinyint (bool)      null
+velocità massima (km/h)             numero          smallint            null
+acccelerazione (0 a 100km/h in s)   numero          tinyint             null
+capacità serbatoio (l)              numero          tinyint             null
