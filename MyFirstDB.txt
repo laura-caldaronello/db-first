@@ -1,30 +1,44 @@
 "Auto usate messe in vendita da tal concessionario"
 
-id interno alla concessionaria      numero          auto_inc            not null            primary key (unique)
+id                                  numero          auto_inc            not null            primary key (unique)
 targa                               stringa         varchar(7)          not null            unique
 marca                               stringa         varchar(20)         not null
 modello                             stringa         varchar(20)         not null
 colore                              stringa         varchar(20)         null
 anno                                data            date                not null
-n. proprietari precedenti           numero          tinyint             null
-km fatti (km)                       numero          mediumint           null
-prezzo (€)                          numero          float(10,2)         null
+n_proprietari_precedenti            numero          tinyint             null
+km_fatti                            numero          mediumint           null
+unità_km                            stringa         varchar(5)          not null
+valuta_pre                          numero          float(10,2)         null
+valuta_prezzo                       stringa         varchar(5)          not null
 posti                               numero          tinyint             null
 porte                               numero          tinyint             null
 alimentazione                       stringa         varchar(20)         not null
-cilindrata (cc)                     numero          smallint            not null
-potenza (cv)                        numero          smallint            null
-cambio manuale                      numero          tinyint (bool)      null                default: 1
-emissioni co2 (g/km)                numero          smallint            null
-classe ambientale                   stringa         varchar(3)          not null
-consumi (l/100km)                   numero          tinyint             null
-aria condizionata                   numero          tinyint (bool)      null
-dimensione bagagliaio (l)           numero          smallint            null
-lunghezza (cm)                      numero          smallint            null
-larghezza (cm)                      numero          smallint            null
-altezza (cm)                        numero          smallint            null
-peso (kg)                           numero          smallint            null
-navigatore integrato                numero          tinyint (bool)      null
-velocità massima (km/h)             numero          smallint            null
-acccelerazione (0 a 100km/h in s)   numero          tinyint             null
-capacità serbatoio (l)              numero          tinyint             null
+cilindrata                          numero          smallint            not null
+unità_cilindrata                    stringa         varchar(5)          not null
+potenza                             numero          smallint            null
+unità_potenza                       stringa         varchar(5)          not null
+cambio_manuale                      numero          tinyint (bool)      null                default: 1
+emissioni_co2                       numero          smallint            null
+unità_emissioni                     stringa         varchar(10)         not null
+classe_ambientale                   stringa         varchar(3)          not null
+consumi                             numero          tinyint             null
+unità_consumi                       stringa         varchar(10)         not null
+aria_condizionata                   numero          tinyint (bool)      null
+dimensione_bagagliaio               numero          smallint            null
+unità_bagagliaio                    stringa         varchar(5)          not null
+lunghezza                           numero          smallint            null
+unità_lunghezza                     stringa         varchar(5)          not null
+larghezza                           numero          smallint            null
+unità_larghezza                     stringa         varchar(5)          not null
+altezza                             numero          smallint            null
+unità_altezza                       stringa         varchar(5)          not null
+peso                                numero          smallint            null
+unità_peso                          stringa         varchar(10)         not null
+navigatore_integrato                numero          tinyint (bool)      null
+velocità_massima                    numero          smallint            null
+unità_velocità_max                  stringa         varchar(10)         not null
+accelerazione                       numero          tinyint             null
+unità_accelerazione                 stringa         varchar(20)         not null
+capacità_serbatoio                  numero          tinyint             null
+unità_capacità_serbatoio            stringa         varchar(5)          not null
