@@ -7,8 +7,8 @@ modello                             stringa         varchar(20)         not null
 colore                              stringa         varchar(20)         null
 anno                                data            date                not null
 n_proprietari_precedenti            numero          tinyint             null
-km_fatti                            numero          mediumint           null
-unità_km                            stringa         varchar(5)          not null
+strada_percorsa                     numero          mediumint           null
+unità_strada_percorsa               stringa         varchar(10)         not null
 valuta_pre                          numero          float(10,2)         null
 valuta_prezzo                       stringa         varchar(5)          not null
 posti                               numero          tinyint             null
